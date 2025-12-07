@@ -4,25 +4,120 @@
     --Olive-Green: #8A9A5B;
     --Light-Gray: #CBCBCB;
     --Dark-brown: #2D1B16;
+    --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: #2D1B16;
+    background-color: var(--Dark-brown);
+    font-family: var(--heading-font);
+    margin: 0;
+    color:var(--Light-Gray);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/background.png);
+}
+
+nav{
+    display:flex;
+    flex-grow: 1;
+    margin: 0 20px 0 20px;
+}
+
+a{
+    flex-grow: 1;
+    margin:10px;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: var(--Light-Gray);
+}
+
+a:hover{
+    color:var(--Olive-Green);
+}
+
+.hero-banner{
+    background-image: url(../images/background.png);
+    padding: 10px;
+    margin: 40px 0 10px 0;
+    justify-items: center;
+}
+
+.description{
+    margin: 40px 0 10px 0;
+    padding: 10px 30px;
+    background-image: url(../images/background.png);
+}
+
+.links-container{
+    margin: 5px 0px;
+    padding: 0 30px;
+}
+
+.link-box{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    min-width: 550px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.link-box div p{
+    text-justify: center;
+    font-size: 15px;
+    margin: 20px 20px;
+}
+
+.link-box div h4{
+    justify-self: center;
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+.icon{
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    width: 108px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/background.png);
+}
+
+footer nav{
+    font-size: 8px;
+}
+
+footer h6{
+    font-size: 15px;
+    margin: 10px;
 }
 
 hr{
     border: none;
-    border-top: 1px solid #804C32;
+    border-top: 1px solid var(--Light-Brown);
 }
 
 h1, h2, h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #CBCBCB;
+    font-family: var(--heading-font);
+    color: var(--Light-Gray);
 }
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #8A9A5B;
+    font-family: var(--paragraph-font);
+    color: var(--Olive-Green);
 }
 
 .logo{
