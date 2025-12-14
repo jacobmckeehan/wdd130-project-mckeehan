@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    
+<body class="child_body">
+    <header class="child_header">
+        <a href="index.html" class="url"><img class="logo" src="images/Picture1.png" alt="Website Logo"></a>
+        <a href="index.html" class="title url"><h2>Home</h2></a>
+        <a href="videos.html" class="title url"><h2>Videos</h2></a>
+        <a href="products.html" class="title url"><h2>Products</h2></a>
+    </header>
+    <hr>
+    <main class="child_main">
+        <h1 class="title">Videos</h1>
+        <p>Go to the channel to get tutorials for my boxes!</p>
+    </main>
+    <hr>
+    <footer class="child_footer">
+        <h3 class="title">Ways to watch</h3>
+
+        <a href="https://www.youtube.com/@constructivechaos7" class="url">
+            <section>
+                <img src="images/youtube.png" alt="Youtube Logo">
+                <div>
+                    <h3>Youtube</h3>
+                    <p>
+                        This is where I post my monthly videos for you to follow along with your Chaos Kits.
+                    </p>
+                </div>
+            </section>
+        </a>
+        <img class="icon" src="images/product.jpg" alt="Constructive Chaos Kit">
+        <form class="url" action="#" method="post">
+            <label>
+                Email Address
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Home Address
+                <input type="text" name="address" required>
+            </label>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
 </body>
 </html>
