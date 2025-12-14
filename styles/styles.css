@@ -13,6 +13,7 @@ body{
     font-family: var(--heading-font);
     margin: 0;
     color:var(--Light-Gray);
+    font-size: 20px;
 }
 
 header{
@@ -24,17 +25,19 @@ header{
 }
 
 nav{
-    display:flex;
-    flex-grow: 1;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:100%;
     margin: 0 20px 0 20px;
+    
 }
 
 a{
-    flex-grow: 1;
     margin:10px;
     font-size: 2.5em;
     text-decoration: none;
     color: var(--Light-Gray);
+    justify-self: center;
 }
 
 a:hover{
@@ -51,7 +54,13 @@ a:hover{
 .description{
     margin: 40px 0 10px 0;
     padding: 10px 30px;
-    background-image: url(../images/background.png);
+    background-color: var(--Light-Brown);
+    justify-items: center;
+}
+
+.description p{
+    max-width: 600px;
+    color: var(--Light-Gray);
 }
 
 .links-container{
@@ -105,6 +114,7 @@ footer nav{
 footer h6{
     font-size: 15px;
     margin: 10px;
+    width: 300px;
 }
 
 hr{
@@ -162,7 +172,7 @@ p{
 .child_footer{
     display: grid;
     grid-template-columns: auto 50% auto;
-
+    font-size: .4em;
     text-align: center;
 }
 
@@ -196,6 +206,7 @@ p{
 }
 .child_footer h3{
     grid-column: 2/3;
+    font-size: 30px;
 }
 .child_footer a{
     grid-column: 2/3;
